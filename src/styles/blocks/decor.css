@@ -1,0 +1,26 @@
+.decor-yandex__title {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: rgb(71 71 71);
+  color: #fce8cc;
+}
+
+.decor-author__title {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgb(71 71 71);
+  border-radius: 3%;
+  color: #fce8cc;
+  padding: 0 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

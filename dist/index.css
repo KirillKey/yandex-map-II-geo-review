@@ -1,0 +1,161 @@
+html {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #000;
+	margin: 0;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.form {
+  /* padding: 29px 0px 30px 17px; */
+  /* padding-left: 17px; */
+  min-width: 352px;
+  min-height: 180px;
+}
+
+.form__title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 18.4px;
+}
+
+.form__input {
+  min-width: 90%;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #CFCFCF;
+  padding: 11px;
+}
+
+.form__input::placeholder{
+  color: #000;
+  font-size: 14px;
+}
+
+.form__input:hover {
+  border: 1px solid #1371C8;
+}
+
+.form__input:focus {
+  border-color: #1371C8;
+  outline: none;
+}
+
+.form__input--textarea {
+  resize: none;
+}
+.btn {
+  border: none;
+  border-radius: 3px;
+  background-color: #FF8663;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 9px 16px;
+margin-bottom: 20px;
+}
+
+.btn:hover{
+  background-color: #f66c46;
+}
+.reviews {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.review {
+  border-bottom: solid 2px #E7E7E7;
+  max-height: 200px;
+  /* scrollbar-color: inherit; */
+}
+
+.author {
+  display: inline-block;
+}
+
+.review-text {
+  margin-bottom: 12px;
+}
+.decor-yandex__title {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: rgb(71 71 71);
+  color: #fce8cc;
+}
+
+.decor-author__title {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgb(71 71 71);
+  border-radius: 3%;
+  color: #fce8cc;
+  padding: 0 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+/*# sourceMappingURL=index.css.map*/

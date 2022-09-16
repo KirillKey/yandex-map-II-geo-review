@@ -1,0 +1,18 @@
+.reviews {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.review {
+  border-bottom: solid 2px #E7E7E7;
+  max-height: 200px;
+  /* scrollbar-color: inherit; */
+}
+
+.author {
+  display: inline-block;
+}
+
+.review-text {
+  margin-bottom: 12px;
+}
