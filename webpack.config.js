@@ -16,7 +16,7 @@ module.exports = {
     },
     output: {
         filename: '[name].[hash].js',
-        path: path.resolve('dist')
+        path: path.resolve('dist' && 'docs')
     },
     devServer: {
         index: 'index.html',
@@ -46,6 +46,6 @@ module.exports = {
             template: 'index.hbs'
         }),
         new MiniCssExtractPlugin(),
-        new CleanWebpackPlugin(['dist'])
+        new CleanWebpackPlugin(['dist' && 'docs'])
     ]
 }
