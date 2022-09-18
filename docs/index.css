@@ -64,6 +64,7 @@ img {
   /* padding-left: 17px; */
   min-width: 352px;
   min-height: 180px;
+  /* background-color: #fcfcf7; */
 }
 
 .form__title {
@@ -78,6 +79,7 @@ img {
   border-radius: 3px;
   border: 1px solid #CFCFCF;
   padding: 11px;
+  background: #ffffffba;
 }
 
 .form__input::placeholder{
@@ -86,17 +88,19 @@ img {
 }
 
 .form__input:hover {
-  border: 1px solid #1371C8;
+  border: 1px solid #ff85637c;
+
 }
 
 .form__input:focus {
-  border-color: #1371C8;
+  border-color: #ff85637c;
   outline: none;
 }
 
 .form__input--textarea {
   resize: none;
 }
+
 .btn {
   border: none;
   border-radius: 3px;
@@ -130,6 +134,17 @@ margin-bottom: 20px;
 .review-text {
   margin-bottom: 12px;
 }
+ymaps[class$="balloon__content"] {
+  background: #fcfcf7;
+}
+
+ymaps[class$="balloon__layout"] {
+  background: #fcfcf7;
+}
+
+/* ymaps[class$="clusterer__content"] {
+  background: red;
+} */
 .decor-yandex__title {
   height: 36px;
   display: flex;

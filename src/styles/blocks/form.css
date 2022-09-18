@@ -3,6 +3,7 @@
   /* padding-left: 17px; */
   min-width: 352px;
   min-height: 180px;
+  /* background-color: #fcfcf7; */
 }
 
 .form__title {
@@ -17,6 +18,7 @@
   border-radius: 3px;
   border: 1px solid #CFCFCF;
   padding: 11px;
+  background: #ffffffba;
 }
 
 .form__input::placeholder{
@@ -25,11 +27,12 @@
 }
 
 .form__input:hover {
-  border: 1px solid #1371C8;
+  border: 1px solid #ff85637c;
+
 }
 
 .form__input:focus {
-  border-color: #1371C8;
+  border-color: #ff85637c;
   outline: none;
 }
 

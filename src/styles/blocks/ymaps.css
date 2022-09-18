@@ -1,0 +1,11 @@
+ymaps[class$="balloon__content"] {
+  background: #fcfcf7;
+}
+
+ymaps[class$="balloon__layout"] {
+  background: #fcfcf7;
+}
+
+/* ymaps[class$="clusterer__content"] {
+  background: red;
+} */

@@ -32,6 +32,7 @@ function init() {
     const geoObjectsInClusterer = e.get('target').getGeoObjects();
     openBalloon(myMap, e.get('coords'), geoObjectsInClusterer);
   });
+  // }, { preset: 'islands#invertedVioletClusterIcons' });
 }
 
 function getReviewsFromLS() {
@@ -64,7 +65,13 @@ function getReviewList(currentGeoObjects) {
 function renderGeoObject(map) {
   const geoObject = [];
   for (const review of getReviewsFromLS()) {
-    const placemark = new ymaps.Placemark(review.coords);
+    const placemark = new ymaps.Placemark(review.coords, {}, {
+      // iconLayout: 'default#imageWithContent',
+      // iconImageHref: './../src/images/location-pointer.png',
+      // iconImageSize: [40, 40],
+      // iconImageOffset: [-6, -36]
+    });
+
     placemark.events.add('click', (e) => {
       e.stopPropagation();
       openBalloon(map, review.coords, [e.get('target')]);
@@ -82,6 +89,11 @@ async function openBalloon(map, coords, currentGeoObjects) {
     content:
       `<div class="reviews">${getReviewList(currentGeoObjects)}</div>` + formTemplate,
   });
+  // }, { backgroundColor: red });
+  // }, { backgroundColor: #fcfcf7 });
+  // }, { maxWidth: 50 });
+
+
   document.querySelector('#add-form').addEventListener('submit', function (e) {
     e.preventDefault();
     const review = {
@@ -95,5 +107,14 @@ async function openBalloon(map, coords, currentGeoObjects) {
     renderGeoObject(map);
 
     map.balloon.close();
+
+
   });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === 'Escape') {
+      map.balloon.close();
+    }
+  });
+
 }
